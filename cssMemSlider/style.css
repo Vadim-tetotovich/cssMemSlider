@@ -151,3 +151,19 @@ input[type=radio] {
 #r4:checked ~ .navigation .labelContainer label:nth-child(4) .activeLabel {
     visibility: visible;
 }
+
+#r1:checked ~ .navigation .labelContainer label:nth-child(1) {
+    opacity: 1;
+}
+
+#r2:checked ~ .navigation .labelContainer label:nth-child(2) {
+    opacity: 1;
+}
+
+#r3:checked ~ .navigation .labelContainer label:nth-child(3) {
+    opacity: 1;
+}
+
+#r4:checked ~ .navigation .labelContainer label:nth-child(4) {
+    opacity: 1;
+}
