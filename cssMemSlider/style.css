@@ -7,6 +7,7 @@ body {
 }
 .container {
     margin: 0 auto;
+    margin-top: 50px;
     width: 70vw;
     height: 50vw;
     text-align: center;
@@ -53,9 +54,11 @@ input[type=radio] {
     height: 100%;
     width: 100%;
 }
+
 .labelContainer {
    margin: 30px 0 30px;
 }
+
 .labelContainer label {
    position: relative;
    display: inline-block;
@@ -106,7 +109,7 @@ input[type=radio] {
     height: 90%;
 }
 
-.textContainer .text {
+.text {
     font-size: 2em;
 }
 
@@ -166,4 +169,48 @@ input[type=radio] {
 
 #r4:checked ~ .navigation .labelContainer label:nth-child(4) {
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 1.6em;
+    }
+
+    .labelContainer label {
+        width: 16px;
+        height: 16px;
+    }
+
+    .activeLabel {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navigation {
+        display: block
+    }
+
+    .textImage {
+        margin-top: 20px;
+    }
+
+    .labelContainer {
+        margin-top: 5px;
+    }
+
+    .text {
+        font-size: 1.3em;
+    }
+
+    .labelContainer label {
+        width: 12px;
+        height: 12px;
+    }
+
+    .activeLabel {
+        width: 6px;
+        height: 6px;
+    }
 }
