@@ -64,6 +64,12 @@ input[type=radio] {
    width: 20px;
    height: 20px;
    margin: 6px;
+   opacity: 0.7;
+   transition: opacity 0.3s linear;
+}
+
+.labelContainer label:hover {
+    opacity: 1;
 }
 
 .activeLabel {
@@ -76,13 +82,6 @@ input[type=radio] {
     visibility: hidden
 }
 
-/*
-#r1:hover ~ .navigation #bullets label:nth-child(1),
-#r2:hover ~ .navigation #bullets label:nth-child(2),
-#r3:hover ~ .navigation #bullets label:nth-child(3),
-#r4:hover ~ .navigation #bullets label:nth-child(4) {
-   background: white;
-} */
 .navigation {
     display: flex;
     justify-content: space-between;
